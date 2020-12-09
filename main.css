@@ -24,21 +24,21 @@ body {
 }
 
 #present-l {
-  animation: yure 2s ease-in-out infinite alternate;
+  animation: yure 4s ease-in-out infinite alternate;
 }
 #present-m {
-  animation: yure 3s ease-in-out infinite alternate;
+  animation: yure 4.5s ease-in-out infinite -3s alternate;
 }
 #present-s {
-  animation: yure 2.2s ease-in-out infinite alternate;
+  animation: yure 5s ease-in-out infinite -5s alternate;
 }
 
 @keyframes yure {
-  0% {transform: translate(4px);}
-  60% {transform: translate(4px);}
-  80% {transform: translate(-4px);}
-  90% {transform: translate(4px);}
-  100% {transform: translate(-4px);}
+  0% {transform: translate(2px);}
+  85% {transform: translate(2px);}
+  90% {transform: translate(-2px);}
+  95% {transform: translate(2px);}
+  100% {transform: translate(-2px);}
 }
 
 #kazari-s {
@@ -102,7 +102,7 @@ body {
 }
 @keyframes letter-open {
   0% {opacity: 0;}
-  90% {opacity: 0;}
+  75% {opacity: 0;}
   100% {opacity: 1;}
 }
 
