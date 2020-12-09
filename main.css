@@ -62,8 +62,48 @@ body {
   border-radius: 4px;
   font-size: 1.2rem;
   line-height: 1.8em;
-  width: 60%;
+  display: none;
+  transition: all .3s;
+  cursor: pointer;
+  position: absolute;
+  overflow: auto;
 }
+.letter {
+  cursor: pointer;
+  width: 80%;
+  position: relative;
+  height: calc(100vh - 2rem);
+  display: flex;
+  align-items: center;
+}
+.letter-img {
+  width: 30%;
+  margin: auto;
+  display: block;
+}
+.letter-img svg {
+  width: 100%;
+}
+#text-check {
+  display: none;
+}
+#letter-top {
+  transition: all .6s;
+  transform-origin: 0 6%;
+}
+#text-check:checked ~ .letter #letter-top {
+  transform: rotateX(180deg) rotateZ(2deg);
+}
+#text-check:checked ~ .letter .text {
+  display: block;
+  animation: letter-open .6s ease-in-out forwards;
+}
+@keyframes letter-open {
+  0% {opacity: 0;}
+  90% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 .message {
   background-image:
   linear-gradient(
@@ -85,7 +125,13 @@ body {
     padding: 1rem 20px;
   }
   .text {
-    width: 90%;
     margin-bottom: 4rem;
+    top: 0;
+    height: calc(100vh - 2rem);
+    box-sizing: border-box;
+  }
+  .letter {
+    width: 100%;
+    height: auto;
   }
 }
