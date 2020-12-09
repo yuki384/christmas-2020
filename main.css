@@ -1,0 +1,47 @@
+.tree-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.tree-cover svg {
+  height: 80vh;
+  width: 80vw;
+}
+body {
+  margin: 0;
+}
+.kazari {
+  cursor: pointer;
+}
+
+#present-l {
+  animation: yure 2s ease-in-out infinite alternate;
+}
+#present-m {
+  animation: yure 3s ease-in-out infinite alternate;
+}
+#present-s {
+  animation: yure 2.2s ease-in-out infinite alternate;
+}
+
+@keyframes yure {
+  0% {transform: translate(4px);}
+  60% {transform: translate(4px);}
+  80% {transform: translate(-4px);}
+  90% {transform: translate(4px);}
+  100% {transform: translate(-4px);}
+}
+
+#kazari-s {
+  transform-origin: 350px 500px;
+  animation: rotate 2s ease-in-out infinite alternate;
+}
+#kazari-l {
+  transform-origin: 290px 300px;
+  animation: rotate 2.5s ease-in-out -1s infinite alternate;
+}
+@keyframes rotate {
+  0% {transform: rotate(6deg);}
+  100% {transform: rotate(-6deg);}
+}
