@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #e2f2e4;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
 }
 .tree-cover svg {
   height: 80vh;
@@ -56,7 +57,7 @@ body {
   margin: 0 auto 2rem;
 }
 .text {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   background: #fffcf4;
   border-radius: 4px;
   font-size: 1.2rem;
@@ -76,4 +77,15 @@ body {
 }
 .message p {
   margin-bottom: 1.8em;
+}
+
+@media screen and (max-width: 900px) {
+  .tree-cover {
+    flex-wrap: wrap;
+    padding: 1rem 20px;
+  }
+  .text {
+    width: 90%;
+    margin-bottom: 4rem;
+  }
 }
