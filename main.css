@@ -51,5 +51,29 @@ body {
   100% {transform: rotate(-6deg);}
 }
 .merrychristmas {
-
+  width: 70%;
+  display: block;
+  margin: 0 auto 2rem;
+}
+.text {
+  padding: 6rem 2rem;
+  background: #fffcf4;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  line-height: 1.8em;
+  width: 60%;
+}
+.message {
+  background-image:
+  linear-gradient(
+    180deg,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0) 96%,
+    #ffead0 96%,
+    #ffead0 100%
+  );
+  background-size: 100% 1.8em;
+}
+.message p {
+  margin-bottom: 1.8em;
 }
