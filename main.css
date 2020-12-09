@@ -4,6 +4,7 @@
   align-items: center;
   height: 100vh;
   background-color: #e2f2e4;
+  padding: 0 2rem;
 }
 .tree-cover svg {
   height: 80vh;
@@ -45,4 +46,7 @@ body {
 @keyframes rotate {
   0% {transform: rotate(6deg);}
   100% {transform: rotate(-6deg);}
+}
+.merrychristmas {
+
 }
