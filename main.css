@@ -3,9 +3,11 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #e2f2e4;
   padding: 1rem 2rem;
   box-sizing: border-box;
+  background: url(img/background.svg);
+  background-color: #e2f2e4;
+  background-size: 10%;
 }
 .tree-cover svg {
   height: 80vh;
