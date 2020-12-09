@@ -120,6 +120,12 @@ body {
 .message p {
   margin-bottom: 1.8em;
 }
+.message-name {
+  text-align: right;
+}
+.message-name img {
+  width: 12rem;
+}
 
 @media screen and (max-width: 900px) {
   .tree-cover {
