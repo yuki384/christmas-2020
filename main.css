@@ -70,6 +70,8 @@ body {
   overflow: auto;
   margin: 1rem;
   z-index: 1;
+  max-width: 800px;
+  box-shadow: 0 0 16px rgba(209, 177, 137, 56%);
 }
 .close-x {
   cursor: pointer;
