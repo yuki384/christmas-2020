@@ -1,4 +1,4 @@
-.tree-cover {
+.card-cover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
   background-color: #e2f2e4;
   background-size: 10%;
 }
-.tree-cover svg {
+.tree-svg {
   height: 80vh;
   width: 80vw;
 }
@@ -66,12 +66,20 @@ body {
   line-height: 1.8em;
   display: none;
   transition: all .3s;
-  cursor: pointer;
   position: absolute;
   overflow: auto;
+  margin: 1rem;
+  z-index: 1;
+}
+.close-x {
+  cursor: pointer;
+  text-align: right;
+  display: block;
+  transform: translateY(-1em);
+  color: #f0485b;
+  font-weight: bold;
 }
 .letter {
-  cursor: pointer;
   width: 80%;
   position: relative;
   height: calc(100vh - 2rem);
@@ -79,11 +87,13 @@ body {
   align-items: center;
 }
 .letter-img {
+  cursor: pointer;
   width: 30%;
   margin: auto;
   display: block;
 }
-.letter-img svg {
+.letter-svg {
+  overflow: initial;
   width: 100%;
 }
 #text-check {
@@ -96,7 +106,7 @@ body {
 #text-check:checked ~ .letter #letter-top {
   transform: rotateX(180deg) rotateZ(2deg);
 }
-#text-check:checked ~ .letter .text {
+#text-check:checked ~ .text {
   display: block;
   animation: letter-open .6s ease-in-out forwards;
 }
@@ -128,7 +138,7 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .tree-cover {
+  .card-cover {
     flex-wrap: wrap;
     padding: 1rem 20px;
   }
