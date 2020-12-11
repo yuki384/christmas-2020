@@ -81,6 +81,13 @@ body {
   color: #f0485b;
   font-weight: bold;
 }
+.message-close-x {
+  cursor: pointer;
+  text-align: right;
+  display: block;
+  color: #f0485b;
+  font-weight: bold;
+}
 .letter {
   width: 80%;
   position: relative;
@@ -154,4 +161,32 @@ body {
     width: 100%;
     height: auto;
   }
+}
+
+.messagebox {
+  display: none;
+  padding: 2rem;
+  max-height: 80vh;
+  width: calc(100% - 2rem);
+  box-sizing: border-box;
+  max-width: 800px;
+  background: #fffcf4;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  line-height: 1.8em;
+  position: absolute;
+  overflow: auto;
+  margin: 1rem;
+  z-index: 1;
+  box-shadow: 0 0 16px rgba(209, 177, 137, 56%);
+}
+.messagebox img {
+  max-width: 60vw;
+  min-width: 40%;
+  max-height: 50vh;
+  display: block;
+  margin: auto;
+}
+.visible {
+  display: block;
 }
