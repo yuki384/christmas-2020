@@ -53,10 +53,19 @@ body {
   transform-origin: 290px 300px;
   animation: rotate 2.5s ease-in-out -1s infinite alternate;
 }
+#bell-s {
+  transform-origin: 350px 130px;
+  animation: rotate 1.5s ease-in-out infinite alternate;
+}
+#bell-l {
+  transform-origin: 140px 700px;
+  animation: rotate 2s ease-in-out -1s infinite alternate;
+}
 @keyframes rotate {
   0% {transform: rotate(6deg);}
   100% {transform: rotate(-6deg);}
 }
+
 .merrychristmas {
   width: 70%;
   display: block;
