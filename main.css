@@ -5,9 +5,8 @@
   min-height: 100vh;
   padding: 1rem 2rem;
   box-sizing: border-box;
-  background: url(img/background.svg);
-  background-color: #e2f2e4;
-  background-size: 10%;
+  margin: auto;
+  max-width: 1200px;
 }
 .tree-svg {
   height: 80vh;
@@ -18,6 +17,9 @@ body {
   font-family: 'Kosugi Maru', sans-serif;
   color: #895e29;
   line-height: 1.8em;
+  background: url(img/background.svg);
+  background-color: #e2f2e4;
+  background-size: 10%;
 }
 .kazari {
   cursor: pointer;
