@@ -172,6 +172,8 @@ body {
     top: 0;
     height: calc(100vh - 2rem);
     box-sizing: border-box;
+    left: 0;
+    right: 0;
   }
   .letter {
     width: 100%;
