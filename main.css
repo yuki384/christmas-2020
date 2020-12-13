@@ -229,3 +229,20 @@ body {
   font-family: sans-serif;
   text-align: center;
 }
+
+
+.tweet-button {
+  position: fixed;
+  width: 10vw;
+  min-width: 100px;
+  max-width: 200px;
+  right: 12px;
+  top: 12px;
+  transition: all .3s;
+}
+.tweet-button:hover {
+  opacity: .7;
+}
+.tweet-button-img {
+  width: 100%;
+}
